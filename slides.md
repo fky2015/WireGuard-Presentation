@@ -189,7 +189,7 @@ WireGuard is cryptographically opinionated. It intentionally lacks cipher and pr
 - Peers (IP) are identified strictly by their public key (see Configuration 1a).
 
 
-![](img/route.png)
+![](/img/route.png)
 
 <style>
 img {
@@ -200,7 +200,7 @@ img {
 
 ---
 
-![](img/route.png)
+![](/img/route.png)
 
 <style>
 img {
@@ -262,11 +262,11 @@ while also ensuring reliable traversal behind NAT.
 <br/>
 <br/>
 
-![](img/endpoint-1.png)
+![](/img/endpoint-1.png)
 
 <br/>
 
-![](img/endpoint-2.png)
+![](/img/endpoint-2.png)
 
 ---
 
@@ -317,7 +317,7 @@ layout: two-cols
 <br />
 <br />
 
-![](img/rtt.png)
+![](/img/rtt.png)
 
 <style>
 
@@ -368,7 +368,7 @@ If the **responder** (the recipient of a message) **is under load**, it **may** 
 <br />
 <br />
 
-![](img/cookie.png)
+![](/img/cookie.png)
 
 ---
 layout: two-cols
@@ -487,7 +487,7 @@ will only accept messages that additionally have this second
 MAC.**
 
 
-![](img/mac.png)
+![](/img/mac.png)
 
 <style>
 img {
@@ -540,7 +540,7 @@ Simple / Fast / No Allocation / Integrate Natively / Buildable as an External Ke
 Throughput
 
 
-![](img/perf-1.png)
+![](/img/perf-1.png)
 
 <style>
 img {
@@ -553,7 +553,7 @@ img {
 # Performance
 Ping Time
 
-![](img/perf-2.png)
+![](/img/perf-2.png)
 
 <style>
 img {
