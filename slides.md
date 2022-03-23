@@ -25,7 +25,7 @@ drawings:
 build perfection out of imperfection
 
 
-<div class="abs-br m-6 flex gap-2">
+<!-- <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
@@ -33,7 +33,7 @@ build perfection out of imperfection
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
-</div>
+</div> -->
 
 ---
 layout: two-cols
@@ -95,13 +95,13 @@ layout: center
 
 - Use Linux transform layer.
 - **Users fill in a kernel structure** determining which ciphersuite and key, or other transforms such as compression, to use for which selector of packets traversing the subsystem. 
-- **Seperate layers of _key exchainge_ from _transport encryption_.**
+- **Separate layers of _key exchange_ from _transport encryption_.**
 
 <br/>
 
 ### Problems: 
 
-- **Too compilcated** with much choice and malleability.
+- **Too complicated** with much choice and malleability.
 - **Hard to implement**.
 
 ---
@@ -122,7 +122,7 @@ layout: center
 
 ---
 
-# WireGuard's principles
+# WireGuard's Principles
 
 - Simplicity and auditable codebase
 - Extremely high-speed
@@ -137,15 +137,15 @@ layout: center
 ---
 
 
-# Complexity lead by layer seperations
+# Complexity lead by layer Separation
 
 <br/>
 
-**do not seperate.**
+**do not separate.**
 
 WireGuard simply gives **a virtual interface** — wg0 for example —
-which can then be administered using the standard ip and
-ifconfig utilities.
+which can then be administered using the standard `ip` and
+`ifconfig` utilities.
 
 Key exchanges, connections, disconnections,
 reconnections, discovery, and so forth **happen behind the
@@ -165,7 +165,7 @@ to be **stateless**.
 
 Two WireGuard peers exchange their public keys
 through some unspecified mechanism, and afterward 
-they areable to communicate.
+they are able to communicate.
 
 ---
 
@@ -278,8 +278,8 @@ while also ensuring reliable traversal behind NAT.
 
 1) The plaintext packet reaches the WireGuard interface.
 2) The destination IP address of the packet is checked.
-3) encrypt the plaintext packet.
-4) prepend a header with various field.
+3) Encrypt the plaintext packet.
+4) Prepend a header with various field.
 5) This header and encrypted packet, together, are **sent as a
 UDP packet** to the Internet UDP/IP endpoint.
 ---
@@ -431,7 +431,7 @@ Solve problem #1 - prefer to stay silent
 In order for the responder to remain
 silent, even while under load, **all messages have a first MAC
 (`msg.mac1`) that uses the responder’s public key and optionally
-the PSK**.
+the PSK (Pre-shared Key)**.
 
 Under load or not under load, this
 first MAC (`msg.mac1`) always is required to be present and
@@ -532,7 +532,7 @@ Simple / Fast / No Allocation / Integrate Natively / Buildable as an External Ke
 - Less than 4,000 lines of code.
 - Reducing cache misses: by waiting until all individual packets of a super packet have been encrypted and encapsulated.
 - All packet transformations are done in-place.
-- [Radix trie](https://en.wikipedia.org/wiki/Radix_tree) is preferred as route table.
+- [Radix Trie](https://en.wikipedia.org/wiki/Radix_tree) is preferred as route table.
 
 ---
 
@@ -564,7 +564,7 @@ img {
 
 ---
 
-# In Conclution
+# In Conclusion
 
 <br />
 <br />
@@ -572,7 +572,7 @@ img {
 <br />
 
 - **Simplicity and auditable codebase** - combine key exchange and encryption
-- **Extremely high-speed** - linux kernel implement optimzation
+- **Extremely high-speed** - Linux kernel implement optimization
 - **Solid engineering solution** - novel cryptographic, improved cookie mechanism
 
 ---
