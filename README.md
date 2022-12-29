@@ -1,9 +1,11 @@
 # Welcome to [Slidev](https://github.com/slidevjs/slidev)!
 
+![](./img/hero.png)
+
 To start the slide show:
 
-- `npm install`
-- `npm run dev`
+- `pnpm install`
+- `pnpm run dev`
 - visit http://localhost:3030
 
 Edit the [slides.md](./slides.md) to see the changes.
